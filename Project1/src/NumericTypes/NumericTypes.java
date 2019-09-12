@@ -1,3 +1,4 @@
+package NumericTypes;
 // TASK #2 Add an import statement for the Scanner class
 
 
