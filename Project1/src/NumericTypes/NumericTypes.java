@@ -56,10 +56,13 @@ System.out.println("Your full name is: " + fullName);
 System.out.println();	// To leave a blank line
 // ADD LINES FOR TASK #3 HERE
 // Get the first character from the user's first name
-char firstChar = String.charAt(1);
 // Print out the user's first initial
 // Convert the user's full name to uppercase
 // Print out the user's full name in uppercase
+System.out.println();
+System.out.println();
+System.out.println();
+System.out.println();
 
 System.out.println();	// To leave a blank line
 
