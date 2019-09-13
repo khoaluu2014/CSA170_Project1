@@ -20,7 +20,7 @@ final int NUMBER = 2 ;	// Number of scores
 final int SCORE1 = 100;	// First test score 
 final int SCORE2 = 95;	// Second test score 
 final int BOILING_IN_F = 212; // Boiling temperature 
-int fToC = 0;	// Temperature Celsius
+double fToC;	// Temperature Celsius
 double average = 0;	// Arithmetic average
 String output;	// Line of output
  
@@ -29,11 +29,14 @@ String output;	// Line of output
 // TASK #3 declare variables used here
 // TASK #4 declare variables used here
 
-// Find an arithmetic average. average = SCORE1 + SCORE2 / NUMBER;
+// Find an arithmetic average. 
+average = (SCORE1 + SCORE2) / NUMBER; //parenthesis fix
 output = SCORE1 + " and " + SCORE2 +
-" have an average of " + average; System.out.println(output);
+" have an average of " + average;
+System.out.println(output);
 
-// Convert Fahrenheit temperature to Celsius. fToC = 5/9 * (BOILING_IN_F - 32);
+// Convert Fahrenheit temperature to Celsius. 
+fToC = 5.0/9.0 * (BOILING_IN_F - 32);	
 output = BOILING_IN_F + " in Fahrenheit is " + fToC + " in Celsius.";
 System.out.println(output);
 System.out.println();	// To leave a blank line
@@ -56,14 +59,13 @@ System.out.println("Your full name is: " + fullName);
 System.out.println();	// To leave a blank line
 // ADD LINES FOR TASK #3 HERE
 // Get the first character from the user's first name
+char letterFirstName = fName.charAt(0);
 // Print out the user's first initial
+System.out.println("Your first initial is: " + letterFirstName);
 // Convert the user's full name to uppercase
+String upperCaseFullName = fullName.toUpperCase();
 // Print out the user's full name in uppercase
-System.out.println();
-System.out.println();
-System.out.println();
-System.out.println();
-
+System.out.println("Your full name in upper case is: " + upperCaseFullName);
 System.out.println();	// To leave a blank line
 
 // ADD LINES FOR TASK #4 HERE
