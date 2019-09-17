@@ -23,15 +23,15 @@ public class Mileage {
 		System.out.println("Please input your driven miles: ");
 		milesDriven = in.nextDouble();
 		//Read miles driven
-		System.out.printf("You have driven: %5.2f %n"  ,milesDriven);
+		System.out.printf("You have driven: %.2f %n"  ,milesDriven);
 		//Prompt user for gallons used
 		System.out.println("Please input your gallons used: ");
 		gallonsUsed = in.nextDouble();
 		//Read gallons used
-		System.out.printf("You have used : %5.2f %n" ,gallonsUsed);
+		System.out.printf("You have used : %.2f %n" ,gallonsUsed);
 		//Calculate miles per gallon
 		mileage = milesDriven / gallonsUsed;
 		//Print miles per gallon 
-		System.out.printf("Your mileage is: %5.2f miles per gallon %n" ,mileage);
+		System.out.printf("Your mileage is: %.2f miles per gallon %n" ,mileage);
 	}
 }
