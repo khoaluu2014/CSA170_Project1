@@ -35,12 +35,11 @@ String output;	// Line of output
  
 
 // TASK #2 declare variables used here
-String fName; // First name
-String lName; // Last name
+String firstName; // First name
+String lastName; // Last name
 String fullName; // Full name 
 // TASK #3 declare variables used here
-char firstLetter; // First letter of fullname
-String upperCaseFullName; // Full name in uppercase
+char firstInitial; // First letter of fullname
 // TASK #4 declare variables used here
 double d = 0; // Diameter
 double r; // Radius
@@ -60,29 +59,31 @@ System.out.println();	// To leave a blank line
 
 // ADD LINES FOR TASK #2 HERE
 // Prompt the user for first name
-System.out.println("Please enter your first name: ");
-fName = in.nextLine();
+System.out.print("Please enter your first name: ");
+firstName = in.nextLine();
 // Read the user's first name
-System.out.println("Your first name is: " + fName);
+System.out.println("Your first name is: " + firstName);
 // Prompt the user for last name
-System.out.println("Please enter your last name: ");
-lName = in.nextLine();
+System.out.print("Please enter your last name: ");
+lastName = in.nextLine();
 // Read the user's last name
-System.out.println("Your last name is: " + lName);
+System.out.println("Your last name is: " + lastName);
 // Concatenate the user's first and last names
-fullName = fName + " " + lName;
+fullName = firstName + " " + lastName;
 // Print out the user's full name
-System.out.println("Your full name is: " + fullName);
+System.out.print("Your full name is: " + fullName);
 System.out.println();	// To leave a blank line
 // ADD LINES FOR TASK #3 HERE
 // Get the first character from the user's first name
 // Print out the user's first initial
-firstLetter = fName.charAt(0);
-System.out.println("Your first initial is: " + firstLetter);
+firstInitial = firstName.charAt(0);
+System.out.println("Your first initial is: " + firstInitial);
 // Convert the user's full name to uppercase
-upperCaseFullName = fullName.toUpperCase();
+fullName = fullName.toUpperCase();
 // Print out the user's full name in uppercase
-System.out.println("Your full name in upper case is: " + upperCaseFullName);
+System.out.println("Your full name in upper case is: " + fullName);
+// Print out the user's full name's length 
+System.out.println("There are " + fullName.length() + " characters in your name, including space");
 System.out.println();	// To leave a blank line
 
 // ADD LINES FOR TASK #4 HERE
