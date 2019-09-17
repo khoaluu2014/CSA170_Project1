@@ -1,3 +1,12 @@
+
+/*
+ * @Khoa Luu 09/17/2019
+ * This program is to:
+ * 1. Convert boiling point from Farenheit to Celcius
+ * 2. Get user's full name, initial, and capitalized everything.
+ * 3. Calculate the volume of a sphere.
+ * */
+
 package NumericTypes;
 // TASK #2 Add an import statement for the Scanner class
 
@@ -26,16 +35,16 @@ String output;	// Line of output
  
 
 // TASK #2 declare variables used here
-String fName;
-String lName;
-String fullName;
+String fName; // First name
+String lName; // Last name
+String fullName; // Full name 
 // TASK #3 declare variables used here
-char letterFirstName;
-String upperCaseFullName;
+char firstLetter; // First letter of fullname
+String upperCaseFullName; // Full name in uppercase
 // TASK #4 declare variables used here
-double d = 0;
-double r;
-double V;
+double d = 0; // Diameter
+double r; // Radius
+double V; // Volume
 
 // Find an arithmetic average. 
 average = (SCORE1 + SCORE2) / NUMBER; //parenthesis fix
@@ -68,8 +77,8 @@ System.out.println();	// To leave a blank line
 // ADD LINES FOR TASK #3 HERE
 // Get the first character from the user's first name
 // Print out the user's first initial
-letterFirstName = fName.charAt(0);
-System.out.println("Your first initial is: " + letterFirstName);
+firstLetter = fName.charAt(0);
+System.out.println("Your first initial is: " + firstLetter);
 // Convert the user's full name to uppercase
 upperCaseFullName = fullName.toUpperCase();
 // Print out the user's full name in uppercase
